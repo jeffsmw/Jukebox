@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Recurring</title>
+    <script>
+      document.write("hello");
+      var text = 'Your name is John Lennon';
+      function mostRecurring(str){
+        var count = {};
+        maxLetter = str[0].toLowerCase;
+
+        for (var i in str) {
+          var letter = str[i].toLowerCase();
+            if(letter != ' ') {
+              count[letter] = count[letter] ? count[letter] + 1 : 1;
+              if count[letter] > count[maxLetter]) {
+                maxLetter = letter;
+              }
+          }
+
+        }
+        console.log(count);
+      }
+      document.write(mostRecurring(text))
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
+<!-- <html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var text = 'Your name is John Lennon';
+
+      function mostRecurring (str) {
+        var counts = {};
+        var maxLetter = str[0].toLowerCase();
+
+        for (var i in str) {
+          var letter = str[i].toLowerCase();
+
+
+
+          if (letter != ' ') {
+            counts[letter] = counts[letter] ? counts[letter] + 1 : 1;
+
+            if (counts[letter] > counts[maxLetter]) {
+              maxLetter = letter;
+            }
+            console.log('maxLetter:', maxLetter)
+          }
+
+        }
+        return maxLetter;
+      };
+
+      document.write(
+        'Text:', text, 'Max letter:', mostRecurring(text)
+      );
+    </script>
+  </body>
+</html> -->

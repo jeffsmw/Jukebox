@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+    var myArray = [[2,3,4], ["Hello CodeCore", 1, true]];
+    function printMulti(multiArray){
+      //document.write(typeof(Array.isArray()));
+      for(i=0;i<multiArray.length;i++) {
+        // document.write(i);
+        if(Array.isArray(multiArray[i])){
+          var flag = i;
+          printMulti(multiArray[i]);
+          i = flag;
+        } else {
+          document.write(multiArray[i].toString()+"<br>");
+        }
+      }
+    }
+    printMulti(myArray);
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
+
+/*
+[].concat.apply()
+*/

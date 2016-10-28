@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+    //Write a function called largestNumber that takes from an array of numbers the largest number.
+    var array = [1,9,2,8,3,7,4,6,5,0];
+
+    function largest(array) {
+      large = array[0];
+      for(i=0;i<array.length;i++){
+        if(array[i] >= large) {
+          large = array[i];
+        }
+      }
+      console.log(large);
+    }
+
+    largest(array);
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
